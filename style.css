@@ -1,0 +1,150 @@
+/* General */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: url('img/image\ 1.png') no-repeat center center fixed;
+    background-size: cover;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Encabezado */
+header {
+    background-color: rgba(0, 0, 0, 0.8);
+    width: 100%;
+    text-align: center;
+    padding: 10px 0;
+}
+
+/* Logo */
+.logo img {
+    max-width: 100%;
+    height: auto;
+    width: 150px; /* Ajusta según el diseño deseado */
+    display: block;
+    margin: 0 auto;
+}
+
+/* Menú lateral */
+.sidebar {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 200px; /* Define el ancho fijo */
+    background-color: rgba(139, 0, 0, 0.9);
+    padding: 20px 10px;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    align-items: center;
+    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.2);
+}
+
+.menu-btn {
+    background-color: white;
+    border: 1px solid #8b0000;
+    padding: 10px 15px;
+    border-radius: 5px;
+    color: #8b0000;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.menu-btn:hover {
+    background-color: #ff6347;
+    color: white;
+}
+
+/* Sección principal */
+.main {
+    margin-left: 220px; /* Ajuste para que no se superponga con la barra lateral */
+    display: flex;
+    flex-wrap: wrap; /* Permite que los formularios se ajusten responsivamente */
+    gap: 20px;
+    justify-content: center;
+    padding: 20px;
+}
+
+.form-container {
+    background-color: rgba(139, 0, 0, 0.9);
+    padding: 20px;
+    border-radius: 10px;
+    color: white;
+    text-align: center;
+    width: 300px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.form-container input,
+.form-container button {
+    display: block;
+    width: calc(100% - 20px);
+    margin: 10px auto;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+}
+/* Menú lateral */
+.sidebar {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 200px; /* Ancho fijo de la barra */
+    background-color: rgba(139, 0, 0, 0.9);
+    padding: 20px 10px;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    gap: 20px; /* Espacio entre botones */
+    align-items: center;
+    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.2);
+}
+
+/* Botones como círculos */
+.menu-btn {
+    width: 60px; /* Ancho igual a la altura */
+    height: 60px;
+    background-color: white;
+    border: none;
+    border-radius: 50%; /* Convierte el botón en un círculo */
+    color: #8b0000;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    text-align: center;
+    font-size: 14px; /* Tamaño de texto ajustado */
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.menu-btn:hover {
+    background-color: #ff6347;
+    color: white;
+}
+
+/* Opcional: Ajuste del texto */
+.menu-btn span {
+    display: none; /* Oculta el texto del botón */
+}
+
+.menu-btn::before {
+    content: attr(data-label); /* Muestra una etiqueta personalizada */
+    font-size: 12px;
+    color: #8b0000;
+}
+
+
+
+
+
+
+
+
